@@ -1,0 +1,7 @@
+default_job = "run"
+
+[jobs.run]
+command = [
+    "sh", "-c", "cargo fmt && cargo clippy && cargo test && cargo run"
+]
+need_stdout = true
